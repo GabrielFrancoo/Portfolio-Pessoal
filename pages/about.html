@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+
+    <link rel="stylesheet" href="../frontend/css/header.css">
+    <link rel="stylesheet" href="../frontend/css/about.css">
+    <link rel="stylesheet" href="../frontend/css/index.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <div id="sidebar"></div>
+
+        <main class = "conteudo">
+
+            <div class = "sobre"> 
+            <p id="text1">Sobre</p>
+            <p id="text2">mim</p>
+            </div>
+
+            <p id="text3"> 
+                Sou um desenvolvedor full stack apaixonado por criar aplicações
+                web escalável e inovador. Com mais de 4 anos de experiência,
+                trabalho com técnologias modernas para transformar ideias em 
+                soluções reais.            
+            </p> 
+            
+            <p id="text4">
+                Quem sou eu
+            </p>
+
+            <div class="container">
+                <div class="bloco">
+                    <h2 class="titulo">💡 Visão</h2>
+                    <p class="texto">
+                        Acredito que a tecnologia deve ser acessível e impactante.
+                        Meu objetivo é criar soluções que resolvem problemas
+                        reais e melhoram a vida das pessoas através de código
+                        bem estruturado e design intuitivo.
+                    </p>    
+                </div>
+
+                <div class="bloco">
+                    <h2 class="titulo">🎯 Missão</h2>
+                    <p class="texto">
+                        Desenvolver aplicações web de alta qualidade que
+                        combinam funcionalidade, performace e experiência do 
+                        usuário. Estou sempre aprendendo novas tecnologias e 
+                        buscando evoluir como profissional.
+                    </p>  
+                </div>
+                    
+                <div class="bloco">
+                    <h2 class="titulo">🚀 Especialidade</h2>
+                    <p class="texto">
+                        Full Stack Development. Tenho experiência
+                        em desenvolvimento desde o frontend até a infraestrutura, garantindo soluções completas e 
+                        robustas.
+                    </p>  
+                </div>
+                
+                <div class="bloco">
+                    <h2 class="titulo">🌱 Aprendizado</h2>
+                    <p class="texto">
+                        Sou um aprendiz contínuo, sempre buscando aprofundar meus conhecimentos em novas
+                        tecnologias, padrões de design e melhores práticas de desenvolvimento para entregar cada vez 
+                        mais valor.
+                    </p>  
+                </div>
+            </div>
+
+          
+
+        </main>
+
+</div>
+
+<script>
+fetch("../components/sidebar.html")
+    .then(r => r.text())
+    .then(html => {
+        document.getElementById("sidebar").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

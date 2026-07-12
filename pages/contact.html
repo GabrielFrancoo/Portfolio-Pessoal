@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+
+    <link rel="stylesheet" href="../frontend/css/index.css">
+    <link rel="stylesheet" href="../frontend/css/contact.css">
+    <link rel="stylesheet" href="../frontend/css/header.css">
+
+</head>
+
+<body>
+    
+    <div class="layout">
+
+        <div id="sidebar"></div>
+
+            <main class = "conteudo">
+
+            </main>
+    </div>
+</body>
+
+<script>
+fetch("../components/sidebar.html")
+    .then(r => r.text())
+    .then(html => {
+        document.getElementById("sidebar").innerHTML = html;
+    });
+</script>
+</html>
