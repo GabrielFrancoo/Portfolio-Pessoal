@@ -19,9 +19,67 @@
 
             <main class = "conteudo">
 
+                <div class = "Informacao">
+                <p id="text1">Entre em</p>
+                <p id="text2">contato</p>
+                </div>
+
+                <p id = "text3"> 
+                    Tem um projeto em mente ou quer entrar em contato sobre outro assunto?
+                    Sinta-se à vontade para me enviar uma mensagem. Responderei o mais rápido possível!
+                </p>
+
+                <div class="container">
+                    <div class="bloco">
+                        <p class="texto4">
+                            📧 gabrielozoriofranco1998@gmail.com
+                        </p>
+                    </div>
+
+                        <div class="bloco">
+                            <p class="texto4">
+                                📍 Campo Largo - PR
+                            </p>
+                        </div>
+
+                        <div class="bloco">
+                            <p class="texto4">
+                                💼 Aberto a Freelance e Projetos
+                            </p>
+                        </div>
+
+                        
+                    <div class="contato-box">
+                        <h2>Entre em contato</h2>
+
+                        <lable for = "nome"> Seu Nome</lable>
+                        <br>
+                        <input type = "text" id = "nome" placeholder="Digite o nome">
+                        <br>
+
+                        <lable for = "email">Seu E-mail</lable>
+                        <br>
+                        <input type = "email" id="email" placeholder="Digite o e-mail">
+                        <br>
+
+                        <lable for = "assunto">Assunto</lable>
+                        <br>
+                        <input type = "text" id = "assunto" placeholder="Sobre o que vamos conversar?">
+                        <br>
+
+                        <label for = "mensagem">Mensagem</label>
+                        <br>
+                        <textarea id = "mensagem" rows= "s" placeholder="Digite aqui sua mensagem"></textarea>
+                        <br>
+                        
+                        <button type = "submit">Enviar Mensagem 🚀 </button>
+
+                    </div>
+
+                    </div>
+                </div>
             </main>
     </div>
-</body>
 
 <script>
 fetch("../components/sidebar.html")
@@ -30,4 +88,5 @@ fetch("../components/sidebar.html")
         document.getElementById("sidebar").innerHTML = html;
     });
 </script>
+</body>
 </html>
